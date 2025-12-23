@@ -1,3 +1,0 @@
-[console_scripts]
-head_follow_controller = head_follow_controller.head_follow_controller:main
-

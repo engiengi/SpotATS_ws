@@ -1,3 +1,0 @@
-[console_scripts]
-system1_executor_node = ats_system1.nodes.system1_executor_node:main
-

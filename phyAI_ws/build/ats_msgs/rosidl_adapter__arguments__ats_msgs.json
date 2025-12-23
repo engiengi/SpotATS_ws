@@ -1,8 +1,0 @@
-{
-  "package_name": "ats_msgs",
-  "non_idl_tuples": [
-    "/home/ubuntu/SpotATS_ws/phyAI_ws/src/ats_msgs:msg/AtsState.msg",
-    "/home/ubuntu/SpotATS_ws/phyAI_ws/src/ats_msgs:msg/PlanCommand.msg",
-    "/home/ubuntu/SpotATS_ws/phyAI_ws/src/ats_msgs:msg/ReplanRequest.msg"
-  ]
-}

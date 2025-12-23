@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="ATS_01">
+  <joint name="joint1" type="revolute">
+    <origin xyz="0. 0. 0." rpy="1.5710436 -0.0003145 1.8161526"/>
+    <parent link="Root"/>
+    <child link="ATS_01_link1"/>
+    <axis xyz="0. 1. 0."/>
+    <limit lower="-6.2831853" upper="6.2831853" effort="340282346638528859811704183484516925440." velocity="5939047335254987724700441203225657344."/>
+  </joint>
+  <joint name="joint2" type="revolute">
+    <origin xyz="0. 0.27175 -0.017154" rpy="-0.0000001 0. 0. "/>
+    <parent link="ATS_01_link1"/>
+    <child link="ATS_01_link2"/>
+    <axis xyz="1. 0. 0."/>
+    <limit lower="-0.8726646" upper="0." effort="340282346638528859811704183484516925440." velocity="5939047335254987724700441203225657344."/>
+  </joint>
+  <link name="ATS_01_link1">
+    <inertial>
+      <origin xyz="-0.0049281 0.14856 0.014146 " rpy="0. 0. 0."/>
+      <mass value="2.6273999"/>
+      <inertia ixx="0.013459" ixy="-0.0002424" ixz="0.0001308" iyy="0.018778" iyz="0.002281" izz="0.021517"/>
+    </inertial>
+    <visual>
+      <origin xyz="0. 0. 0." rpy="-0.0000001 0. 0. "/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_link1_visuals_link1_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0. 0. 0." rpy="-0.0000001 0. 0. "/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_link1_collisions_link1_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0. 0. 0." rpy="-0.0000001 0. 0. "/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_link1_collisions_link1_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="ATS_01_link2">
+    <inertial>
+      <origin xyz="-0.0094763 0.026223 -0.040506 " rpy="0. 0. 0."/>
+      <mass value="1.3987"/>
+      <inertia ixx="0.0046118" ixy="0.0000028" ixz="0.0000088" iyy="0.0039548" iyz="0.0001337" izz="0.0011478"/>
+    </inertial>
+    <visual>
+      <origin xyz="0. 0. 0." rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_link2_visuals_link2_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0. 0. 0." rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_link2_collisions_link2_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0. 0. 0." rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_link2_collisions_link2_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="Root">
+    <visual>
+      <origin xyz="0. 0. 0." rpy="0.0002436 -0.0003145 1.8161526"/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_base_link_visuals_base_link_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0. 0. 0." rpy="0.0002436 -0.0003145 1.8161526"/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_base_link_collisions_base_link_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0. 0. 0." rpy="0.0002436 -0.0003145 1.8161526"/>
+      <geometry>
+        <mesh filename="file:///home/ubuntu/SpotATS_ws/ATS_IsaacSim/Main/ATS_Enviroment/meshes/ATS_01_base_link_collisions_base_link_mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

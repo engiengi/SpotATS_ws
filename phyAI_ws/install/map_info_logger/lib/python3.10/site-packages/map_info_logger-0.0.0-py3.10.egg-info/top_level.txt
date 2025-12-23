@@ -1,1 +1,0 @@
-map_info_logger

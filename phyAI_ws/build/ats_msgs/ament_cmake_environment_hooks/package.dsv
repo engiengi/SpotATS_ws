@@ -1,4 +1,0 @@
-source;share/ats_msgs/local_setup.bash
-source;share/ats_msgs/local_setup.dsv
-source;share/ats_msgs/local_setup.sh
-source;share/ats_msgs/local_setup.zsh

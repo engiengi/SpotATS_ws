@@ -1,3 +1,0 @@
-[console_scripts]
-keyboard_control = ats_keyboard_control.keyboard_control_node:main
-

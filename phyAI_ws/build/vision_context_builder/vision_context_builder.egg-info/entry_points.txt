@@ -1,3 +1,0 @@
-[console_scripts]
-vision_context_builder_node = vision_context_builder.vision_context_builder_node:main
-

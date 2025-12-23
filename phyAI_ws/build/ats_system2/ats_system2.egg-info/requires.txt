@@ -1,4 +1,0 @@
-langchain-core
-langchain-openai
-pydantic<3
-setuptools
